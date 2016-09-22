@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/immortal-som/postcss-text-stroke/master/img/img.jpg" width="810" alt="Text stroke" />
+<img src="https://raw.githubusercontent.com/immortal-som/postcss-text-stroke/master/img/text-stroke.png" width="810" alt="Text stroke" />
 
 # postcss-text-stroke
 
