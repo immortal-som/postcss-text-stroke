@@ -1,3 +1,5 @@
+<img src="https://raw.githubusercontent.com/immortal-som/postcss-text-stroke/master/img/img.jpg" width="810" alt="Text stroke" />
+
 # postcss-text-stroke
 
 
@@ -7,7 +9,7 @@
 
 ```css
 .foo {
-	text-stroke: [size] [color];
+	text-stroke: [size] [color] [smooth];
 }
 ```
 
@@ -15,13 +17,19 @@
 
 in
 ```
-.foo {
-	text-stroke: 8 #a13c32;
+.stroke {
+	text-stroke: 1 #d50200;
+}
+.stroke_3_smooth {
+	text-stroke: 3 #d50200 smooth;
 }
 ```
 out
 ```
-.foo {
-  	text-shadow: -8px -8px 0 #a13c32,-8px -7px 0 #a13c32,-8px -6px 0 #a13c32,-8px -5px 0 #a13c32,-8px -4px 0 #a13c32,-8px -3px 0 #a13c32,-8px -2px 0 #a13c32,-8px -1px 0 #a13c32,-8px 0 0 #a13c32,-8px 1px 0 #a13c32,-8px 2px 0 #a13c32,-8px 3px 0 #a13c32,-8px 4px 0 #a13c32,-8px 5px 0 #a13c32,-8px 6px 0 #a13c32,-8px 7px 0 #a13c32,-8px 8px 0 #a13c32,-7px -8px 0 #a13c32,-7px -7px 0 #a13c32,-7px -6px 0 #a13c32,-7px -5px 0 #a13c32,-7px -4px 0 #a13c32,-7px -3px 0 #a13c32,-7px -2px 0 #a13c32,-7px -1px 0 #a13c32,-7px 0 0 #a13c32,-7px 1px 0 #a13c32,-7px 2px 0 #a13c32,-7px 3px 0 #a13c32,-7px 4px 0 #a13c32,-7px 5px 0 #a13c32,-7px 6px 0 #a13c32,-7px 7px 0 #a13c32,-7px 8px 0 #a13c32,-6px -8px 0 #a13c32,-6px -7px 0 #a13c32,-6px -6px 0 #a13c32,-6px -5px 0 #a13c32,-6px -4px 0 #a13c32,-6px -3px 0 #a13c32,-6px -2px 0 #a13c32,-6px -1px 0 #a13c32,-6px 0 0 #a13c32,-6px 1px 0 #a13c32,-6px 2px 0 #a13c32,-6px 3px 0 #a13c32,-6px 4px 0 #a13c32,-6px 5px 0 #a13c32,-6px 6px 0 #a13c32,-6px 7px 0 #a13c32,-6px 8px 0 #a13c32,-5px -8px 0 #a13c32,-5px -7px 0 #a13c32,-5px -6px 0 #a13c32,-5px -5px 0 #a13c32,-5px -4px 0 #a13c32,-5px -3px 0 #a13c32,-5px -2px 0 #a13c32,-5px -1px 0 #a13c32,-5px 0 0 #a13c32,-5px 1px 0 #a13c32,-5px 2px 0 #a13c32,-5px 3px 0 #a13c32,-5px 4px 0 #a13c32,-5px 5px 0 #a13c32,-5px 6px 0 #a13c32,-5px 7px 0 #a13c32,-5px 8px 0 #a13c32,-4px -8px 0 #a13c32,-4px -7px 0 #a13c32,-4px -6px 0 #a13c32,-4px -5px 0 #a13c32,-4px -4px 0 #a13c32,-4px -3px 0 #a13c32,-4px -2px 0 #a13c32,-4px -1px 0 #a13c32,-4px 0 0 #a13c32,-4px 1px 0 #a13c32,-4px 2px 0 #a13c32,-4px 3px 0 #a13c32,-4px 4px 0 #a13c32,-4px 5px 0 #a13c32,-4px 6px 0 #a13c32,-4px 7px 0 #a13c32,-4px 8px 0 #a13c32,-3px -8px 0 #a13c32,-3px -7px 0 #a13c32,-3px -6px 0 #a13c32,-3px -5px 0 #a13c32,-3px -4px 0 #a13c32,-3px -3px 0 #a13c32,-3px -2px 0 #a13c32,-3px -1px 0 #a13c32,-3px 0 0 #a13c32,-3px 1px 0 #a13c32,-3px 2px 0 #a13c32,-3px 3px 0 #a13c32,-3px 4px 0 #a13c32,-3px 5px 0 #a13c32,-3px 6px 0 #a13c32,-3px 7px 0 #a13c32,-3px 8px 0 #a13c32,-2px -8px 0 #a13c32,-2px -7px 0 #a13c32,-2px -6px 0 #a13c32,-2px -5px 0 #a13c32,-2px -4px 0 #a13c32,-2px -3px 0 #a13c32,-2px -2px 0 #a13c32,-2px -1px 0 #a13c32,-2px 0 0 #a13c32,-2px 1px 0 #a13c32,-2px 2px 0 #a13c32,-2px 3px 0 #a13c32,-2px 4px 0 #a13c32,-2px 5px 0 #a13c32,-2px 6px 0 #a13c32,-2px 7px 0 #a13c32,-2px 8px 0 #a13c32,-1px -8px 0 #a13c32,-1px -7px 0 #a13c32,-1px -6px 0 #a13c32,-1px -5px 0 #a13c32,-1px -4px 0 #a13c32,-1px -3px 0 #a13c32,-1px -2px 0 #a13c32,-1px -1px 0 #a13c32,-1px 0 0 #a13c32,-1px 1px 0 #a13c32,-1px 2px 0 #a13c32,-1px 3px 0 #a13c32,-1px 4px 0 #a13c32,-1px 5px 0 #a13c32,-1px 6px 0 #a13c32,-1px 7px 0 #a13c32,-1px 8px 0 #a13c32,0 -8px 0 #a13c32,0 -7px 0 #a13c32,0 -6px 0 #a13c32,0 -5px 0 #a13c32,0 -4px 0 #a13c32,0 -3px 0 #a13c32,0 -2px 0 #a13c32,0 -1px 0 #a13c32,0 0 0 #a13c32,0 1px 0 #a13c32,0 2px 0 #a13c32,0 3px 0 #a13c32,0 4px 0 #a13c32,0 5px 0 #a13c32,0 6px 0 #a13c32,0 7px 0 #a13c32,0 8px 0 #a13c32,1px -8px 0 #a13c32,1px -7px 0 #a13c32,1px -6px 0 #a13c32,1px -5px 0 #a13c32,1px -4px 0 #a13c32,1px -3px 0 #a13c32,1px -2px 0 #a13c32,1px -1px 0 #a13c32,1px 0 0 #a13c32,1px 1px 0 #a13c32,1px 2px 0 #a13c32,1px 3px 0 #a13c32,1px 4px 0 #a13c32,1px 5px 0 #a13c32,1px 6px 0 #a13c32,1px 7px 0 #a13c32,1px 8px 0 #a13c32,2px -8px 0 #a13c32,2px -7px 0 #a13c32,2px -6px 0 #a13c32,2px -5px 0 #a13c32,2px -4px 0 #a13c32,2px -3px 0 #a13c32,2px -2px 0 #a13c32,2px -1px 0 #a13c32,2px 0 0 #a13c32,2px 1px 0 #a13c32,2px 2px 0 #a13c32,2px 3px 0 #a13c32,2px 4px 0 #a13c32,2px 5px 0 #a13c32,2px 6px 0 #a13c32,2px 7px 0 #a13c32,2px 8px 0 #a13c32,3px -8px 0 #a13c32,3px -7px 0 #a13c32,3px -6px 0 #a13c32,3px -5px 0 #a13c32,3px -4px 0 #a13c32,3px -3px 0 #a13c32,3px -2px 0 #a13c32,3px -1px 0 #a13c32,3px 0 0 #a13c32,3px 1px 0 #a13c32,3px 2px 0 #a13c32,3px 3px 0 #a13c32,3px 4px 0 #a13c32,3px 5px 0 #a13c32,3px 6px 0 #a13c32,3px 7px 0 #a13c32,3px 8px 0 #a13c32,4px -8px 0 #a13c32,4px -7px 0 #a13c32,4px -6px 0 #a13c32,4px -5px 0 #a13c32,4px -4px 0 #a13c32,4px -3px 0 #a13c32,4px -2px 0 #a13c32,4px -1px 0 #a13c32,4px 0 0 #a13c32,4px 1px 0 #a13c32,4px 2px 0 #a13c32,4px 3px 0 #a13c32,4px 4px 0 #a13c32,4px 5px 0 #a13c32,4px 6px 0 #a13c32,4px 7px 0 #a13c32,4px 8px 0 #a13c32,5px -8px 0 #a13c32,5px -7px 0 #a13c32,5px -6px 0 #a13c32,5px -5px 0 #a13c32,5px -4px 0 #a13c32,5px -3px 0 #a13c32,5px -2px 0 #a13c32,5px -1px 0 #a13c32,5px 0 0 #a13c32,5px 1px 0 #a13c32,5px 2px 0 #a13c32,5px 3px 0 #a13c32,5px 4px 0 #a13c32,5px 5px 0 #a13c32,5px 6px 0 #a13c32,5px 7px 0 #a13c32,5px 8px 0 #a13c32,6px -8px 0 #a13c32,6px -7px 0 #a13c32,6px -6px 0 #a13c32,6px -5px 0 #a13c32,6px -4px 0 #a13c32,6px -3px 0 #a13c32,6px -2px 0 #a13c32,6px -1px 0 #a13c32,6px 0 0 #a13c32,6px 1px 0 #a13c32,6px 2px 0 #a13c32,6px 3px 0 #a13c32,6px 4px 0 #a13c32,6px 5px 0 #a13c32,6px 6px 0 #a13c32,6px 7px 0 #a13c32,6px 8px 0 #a13c32,7px -8px 0 #a13c32,7px -7px 0 #a13c32,7px -6px 0 #a13c32,7px -5px 0 #a13c32,7px -4px 0 #a13c32,7px -3px 0 #a13c32,7px -2px 0 #a13c32,7px -1px 0 #a13c32,7px 0 0 #a13c32,7px 1px 0 #a13c32,7px 2px 0 #a13c32,7px 3px 0 #a13c32,7px 4px 0 #a13c32,7px 5px 0 #a13c32,7px 6px 0 #a13c32,7px 7px 0 #a13c32,7px 8px 0 #a13c32,8px -8px 0 #a13c32,8px -7px 0 #a13c32,8px -6px 0 #a13c32,8px -5px 0 #a13c32,8px -4px 0 #a13c32,8px -3px 0 #a13c32,8px -2px 0 #a13c32,8px -1px 0 #a13c32,8px 0 0 #a13c32,8px 1px 0 #a13c32,8px 2px 0 #a13c32,8px 3px 0 #a13c32,8px 4px 0 #a13c32,8px 5px 0 #a13c32,8px 6px 0 #a13c32,8px 7px 0 #a13c32,8px 8px 0 #a13c32;
+.stroke {
+  	text-shadow: -1px -1px 0 #d50200,-1px 0 0 #d50200,-1px 1px 0 #d50200,0 -1px 0 #d50200,0 0 0 #d50200,0 1px 0 #d50200,1px -1px 0 #d50200,1px 0 0 #d50200,1px 1px 0 #d50200;
+}
+.stroke_3_smooth {
+	text-shadow: -3px -3px 1px #ececec,-3px -2px 1px #ececec,-3px -1px 1px #ececec,-3px 0 1px #ececec,-3px 1px 1px #ececec,-3px 2px 1px #ececec,-3px 3px 1px #ececec,-2px -3px 1px #ececec,-2px -2px 1px #ececec,-2px -1px 1px #ececec,-2px 0 1px #ececec,-2px 1px 1px #ececec,-2px 2px 1px #ececec,-2px 3px 1px #ececec,-1px -3px 1px #ececec,-1px -2px 1px #ececec,-1px -1px 1px #ececec,-1px 0 1px #ececec,-1px 1px 1px #ececec,-1px 2px 1px #ececec,-1px 3px 1px #ececec,0 -3px 1px #ececec,0 -2px 1px #ececec,0 -1px 1px #ececec,0 0 1px #ececec,0 1px 1px #ececec,0 2px 1px #ececec,0 3px 1px #ececec,1px -3px 1px #ececec,1px -2px 1px #ececec,1px -1px 1px #ececec,1px 0 1px #ececec,1px 1px 1px #ececec,1px 2px 1px #ececec,1px 3px 1px #ececec,2px -3px 1px #ececec,2px -2px 1px #ececec,2px -1px 1px #ececec,2px 0 1px #ececec,2px 1px 1px #ececec,2px 2px 1px #ececec,2px 3px 1px #ececec,3px -3px 1px #ececec,3px -2px 1px #ececec,3px -1px 1px #ececec,3px 0 1px #ececec,3px 1px 1px #ececec,3px 2px 1px #ececec,3px 3px 1px #ececec;
 }
 ```
