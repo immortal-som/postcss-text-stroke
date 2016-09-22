@@ -2,10 +2,7 @@
 
 # postcss-text-stroke
 
-
-## API
-
-### Stylesheets
+## Stylesheets
 
 ```css
 .foo {
@@ -13,10 +10,10 @@
 }
 ```
 
-#### Examples
+### Examples
 
 in
-```
+```css
 .stroke {
 	text-stroke: 1 #d50200;
 }
@@ -25,7 +22,7 @@ in
 }
 ```
 out
-```
+```css
 .stroke {
   	text-shadow: -1px -1px 0 #d50200,-1px 0 0 #d50200,-1px 1px 0 #d50200,0 -1px 0 #d50200,0 0 0 #d50200,0 1px 0 #d50200,1px -1px 0 #d50200,1px 0 0 #d50200,1px 1px 0 #d50200;
 }
