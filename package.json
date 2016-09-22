@@ -1,6 +1,6 @@
 {
   "name": "postcss-text-stroke",
-  "version": "1.0.2",
+  "version": "0.0.1",
   "description": "Plugins PostCSS.",
   "main": "index.js",
   "scripts": {
@@ -8,9 +8,9 @@
   },
   "author": "Pan Som",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
+    "postcss": "^5.0.19"
   },
-  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/immortal-som/postcss-text-stroke.git"
