@@ -7,14 +7,19 @@ module.exports = postcss.plugin(pluginName, function (opts) {
 
 	return function (css) {
 		css.walkDecls('text-stroke', function (decl) {
-			var sizes = postcss.list.space(decl.value);
-			var cssSize = parseInt(sizes[0], 10);
-			var cssColor = sizes[1];
+			var stroke = postcss.list.space(decl.value);
+			var cssSize = stroke[0];
+			var cssColor = stroke[1];
+			var cssSmooth = stroke[2];
 			var cssTextshadow = '';
 
 			for (var w = cssSize*-1; w <= cssSize; w++) {
 				for (var h = cssSize*-1; h <= cssSize; h++) {
-			      cssTextshadow += w + 'px ' + h + 'px 0 ' + cssColor + ',';
+					if (cssSmooth === 'smooth') {
+			    		cssTextshadow += w + 'px ' + h + 'px 1px ' + cssColor + ',';
+			    	} else {
+			    		cssTextshadow += w + 'px ' + h + 'px 0 ' + cssColor + ',';
+			    	}
 			    }
 			}
 
