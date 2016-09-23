@@ -18,7 +18,7 @@ in
 	text-stroke: 1 #d50200;
 }
 .stroke_3_smooth {
-	text-stroke: 3 #d50200 smooth;
+	text-stroke: 3 #ececec smooth;
 }
 ```
 out
